@@ -1,0 +1,18 @@
+reviews:
+  path_instructions:
+    - path: "**/*.cs"
+      instructions: |
+        Review all C# source code and ensure the following:
+
+        - Methods must handle invalid inputs or possible errors. Ensure inputs are validated or wrapped
+          in try-catch blocks when needed. Avoid assuming inputs are always valid.
+        - Class names and method names must follow C# PascalCase naming conventions. Avoid using
+          snake_case, camelCase, or inconsistent capitalization.
+        - Public methods should include a short, clear comment describing their purpose. Comments must
+          be meaningful, accurate, and helpful for other developers.
+        - Console.WriteLine output must clearly describe what is being printed. Avoid vague or
+          meaningless messages such as “Done” or “OK”.
+        - Code must be clean, readable, and well-structured. Ensure consistent indentation, spacing,
+          and formatting across all files. Avoid unnecessary complexity or clutter.
+        - Avoid duplicated or repeated logic across the codebase. Shared logic should be extracted into
+          reusable methods, helpers, or services to maintain maintainability and consistency.
